@@ -1,0 +1,10 @@
+/*
+* main.css - core style definitions
+*/
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #A8EAF8;
+}
