@@ -4,7 +4,9 @@
   "description": "A getting started project using Electron desktop app framework.",
   "main": "main.js",
   "scripts": {
-    "start": "node_modules/electron-prebuilt/dist/electron app.js",
+    "lin": "node_modules/electron-prebuilt/dist/electron app.js",
+    "osx": "",
+    "win": "node_modules\\.bin\\electron app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
