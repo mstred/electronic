@@ -9,7 +9,7 @@
   app.on('ready', function() {
 
     $window = new BrowserWindow($settings);
-    $window.loadUrl($url);
+    $window.loadURL($url);
 
     $window.on('closed', function () { $window = null });
 

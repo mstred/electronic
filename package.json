@@ -19,6 +19,6 @@
   "bugs": { "url": "https://github.com/mstred/electronic/issues" },
   "homepage": "https://github.com/mstred/electronic#readme",
   "dependencies": {
-    "electron-prebuilt": "^0.30.4"
+    "electron-prebuilt": "^0.37.2"
   }
 }
