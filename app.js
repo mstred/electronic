@@ -1,20 +1,18 @@
 'use strict';
+((app, BrowserWindow) => {
+  let win;
+  let settings = {
+    autoHideMenuBar: true,
+    useContentSize: true
+  };
+  var url = `file://${__dirname}/app/index.html`;
 
-(function(app, BrowserWindow) {
+  app.on('ready', () => {
+    win = new BrowserWindow(settings);
+    win.loadURL(url);
 
-  var $window;
-  var $settings = {};
-  var $url = `file://${__dirname}/app/index.html`;
-
-  app.on('ready', function() {
-
-    $window = new BrowserWindow($settings);
-    $window.loadURL($url);
-
-    $window.on('closed', function () { $window = null });
-
+    win.on('closed', () => { win = null });
   });
-
 })(
   require('app'),
   require('browser-window')
